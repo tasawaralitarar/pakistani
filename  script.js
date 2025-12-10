@@ -1,5 +1,6 @@
 let redCount = 0;
 let blueCount = 0;
+let yellowcount=0;
 
 document.getElementById("redBtn").addEventListener("click", () => {
   redCount++;
@@ -8,6 +9,11 @@ document.getElementById("redBtn").addEventListener("click", () => {
 });
 
 document.getElementById("blueBtn").addEventListener("click", () => {
+  blueCount++;
+  document.getElementById("message").innerText =
+    "青ボタンを " + blueCount + " 回押しました";
+});
+document.getElementById("yellowbtn").addEventListener("click", () => {
   blueCount++;
   document.getElementById("message").innerText =
     "青ボタンを " + blueCount + " 回押しました";
